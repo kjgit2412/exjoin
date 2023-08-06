@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<section th:object="${user}">
+    <dl>
+        <dt>회원번호</dt>
+        <dd th:text="*{userNo}"></dd>
+    </dl>
+    <dl>
+        <dt>아이디</dt>
+        <dd th:text="*{userId}"></dd>
+    </dl>
+    <dl>
+        <dt>회원명</dt>
+        <dd th:text="*{userNm}"></dd>
+    </dl>
+    <dl>
+        <dt>이메일</dt>
+        <dd th:text="*{email}"></dd>
+    </dl>
+    <dl>
+        <dt>가입일자</dt>
+        <dd th:text="*{regDt}"></dd>
+    </dl>
+</section>
+</html>
